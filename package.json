@@ -1,0 +1,16 @@
+{
+  "name": "aboutme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mulai": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "selesai": "npx tailwindcss -o ./assets/css/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
