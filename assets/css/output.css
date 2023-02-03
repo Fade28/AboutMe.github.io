@@ -513,10 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -561,6 +557,11 @@ video {
   margin-right: auto;
 }
 
+.-mx-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -575,6 +576,14 @@ video {
 
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .box-border {
@@ -605,6 +614,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-\[1px\] {
+  min-height: 1px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -629,8 +642,8 @@ video {
   border-radius: 9999px;
 }
 
-.bg-\[url\(\.\.\/img\/img-profile\.jpg\)\] {
-  background-image: url(../img/img-profile.jpg);
+.bg-\[url\(\.\.\/img\/img-profil\.jpg\)\] {
+  background-image: url(../img/img-profil.jpg);
 }
 
 .bg-gradient-to-br {
@@ -668,16 +681,27 @@ video {
   padding: 10%;
 }
 
-.pt-\[30px\] {
+.py-\[30px\] {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.pr-\[20px\] {
+.px-\[20px\] {
+  padding-left: 20px;
   padding-right: 20px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .align-middle {
@@ -696,6 +720,15 @@ video {
   font-size: 12px;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .leading-\[1\] {
   line-height: 1;
 }
@@ -709,14 +742,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue-50 {
+.text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgb(239 246 255 / var(--tw-text-opacity));
-}
-
-.text-blue-100 {
-  --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .shadow-none {
@@ -759,13 +787,23 @@ video {
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
 
+@media (min-width: 480px) {
+  .min-\[480px\]\:p-\[50px\] {
+    padding: 50px;
+  }
+}
+
 @media (min-width: 640px) {
-  .sm\:w-1\/2 {
-    width: 50%;
+  .sm\:fixed {
+    position: fixed;
   }
 
-  .sm\:p-\[50px\] {
-    padding: 50px;
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:shadow-boxKiri {
